@@ -66,4 +66,36 @@ $(document).ready(function(){
         theme.attr("href", "./css/blue.css");
     });
 
+    // Scroll up
+
+    $(".up").click(function(e){
+        e.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+    // LocalStorage Login
+
+    $("#login form").submit(function(){
+        var formName = $("#form_name").val();
+
+        localStorage.setItem("form_name", formName);
+    });
+
+    var formName1 = localStorage.getItem("form_name");
+    console.log(formName1);
+    if(formName1 != null && formName1 != "undefined"){
+        var about_parrafo = $("#about p");
+        about_parrafo.html("Bienvenido " + formName1);
+        about_parrafo.append("<a href='#' id='logout'>Cerrar sesión</a> ");
+        $("#login").hide();
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+    }
+
+
 });
