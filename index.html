@@ -8,13 +8,22 @@
     <title>Proyecto con Javascript</title>
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link id="theme" rel="stylesheet" href="./css/green.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src='js/main.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
 </head>
 
 <body>
+    <div id="theme-selector">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
     <div id="global">
         <!-- Cabecera -->
         <header>
@@ -44,26 +53,7 @@
         <!-- Contenido -->
         <section id="contenido">
             <div id="posts">
-                <article class="post">
-                    <h2>Título del artículo</h2>
-                    <span class="date">fecha de publicación</span>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aliquid aut autem quis nisi
-                        aperiam quod ea impedit, iusto architecto, nam explicabo, culpa est sapiente repudiandae vel
-                        ducimus mollitia neque?
-                    </p>
-                    <a href="#" class="button-more">Más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del artículo</h2>
-                    <span class="date">fecha de publicación</span>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aliquid aut autem quis nisi
-                        aperiam quod ea impedit, iusto architecto, nam explicabo, culpa est sapiente repudiandae vel
-                        ducimus mollitia neque?
-                    </p>
-                    <a href="#" class="button-more">Más</a>
-                </article>
+                <!-- Aquí se cargan los articulos -->
             </div>
             <aside id="sidebar">
                 <div id="about">
