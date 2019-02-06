@@ -11,10 +11,11 @@
     <link id="theme" rel="stylesheet" href="./css/green.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src='js/main.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <link rel="stylesheet" href="js/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jqueryui/jquery-ui.theme.min.css">
+    <script src="js/jqueryui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -41,19 +42,21 @@
             </nav>
         </header>
 
-        <!-- Slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/rojo.jpg" title="Rojo"></div>
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-            </div>
-        </div>
-
         <!-- Contenido -->
         <section id="contenido">
-            <div id="posts">
-                <!-- Aquí se cargan los articulos -->
+            <div id="box">
+                <!-- Aquí se cargael acordeon -->
+                <h2>Sobre mi</h2>
+                <div id="acordeon"> 
+                    <h3>¿Quien soy?</h3>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, saepe distinctio amet vitae natus quis tenetur suscipit vel, pariatur commodi, repellat sunt provident. Praesentium, harum odit alias dolorem numquam ipsam!</p></div>
+                    <h3>Mis servicios</h3>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, saepe distinctio amet vitae natus quis tenetur suscipit vel, pariatur commodi, repellat sunt provident. Praesentium, harum odit alias dolorem numquam ipsam!</p></div>
+                    <h3>Capacitaciones</h3>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, saepe distinctio amet vitae natus quis tenetur suscipit vel, pariatur commodi, repellat sunt provident. Praesentium, harum odit alias dolorem numquam ipsam!</p></div>
+                    <h3>Contacto</h3>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, saepe distinctio amet vitae natus quis tenetur suscipit vel, pariatur commodi, repellat sunt provident. Praesentium, harum odit alias dolorem numquam ipsam!</p></div>
+                </div>
             </div>
             <aside id="sidebar">
                 <div id="about">
